@@ -7,6 +7,7 @@
     %link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"}
     %link{rel:"stylesheet", href:"css/bootstrap.css"}
     %link{href:"https://fonts.googleapis.com/css?family=Dancing+Script&display=swap", rel:"stylesheet"}
+    %link{rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"}
     %link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"}
     %link{rel:"stylesheet", href:"css/main.css"}
     %meta{name: "viewport", content:"width=device-width, initial-scale=1"}
@@ -24,13 +25,17 @@
         .box.white-text
           %img{src:"images/logo.jpg", width:200}
           %h1.dancing-script.title.no-margin Somos Dealers de Streetwear Nacional      
-          %p#is-open Abierto ahora 
+          %p#is-open 
+            %i.glyphicon.glyphicon-time
+            Abierto ahora 
       %nav.fixed.top.right.navigation.white-text#navigation
         -menu = ["Home", "Productos", "Galería", "Contacto", "Cómo llegar"]
         %ul.list-inline
           -menu.each do |item|
             %li
               %a{}= item
+      .absolute.medium.green-yellow.large-padding.bottom.white-text.full-width#description
+        Contamos con las mejores marcas del Streetwear Mexicano 
 
 
       

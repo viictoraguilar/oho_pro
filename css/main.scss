@@ -115,6 +115,18 @@
   li {
     @extend .medium;
     padding: 5px 10px;
+    transition: all 0.5s;
+    &:hover{
+      border-radius: 3px;
+      background-color: rgba(224,249,0,0.8);
+    }
+    a{
+      color: white;
+      cursor: pointer;
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
 }
 

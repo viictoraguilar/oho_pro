@@ -91,7 +91,18 @@ textarea {
     transform: translate(-50%, -50%); }
 
 .navigation li {
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .navigation li:hover {
+    border-radius: 3px;
+    background-color: rgba(224, 249, 0, 0.8); }
+  .navigation li a {
+    color: white;
+    cursor: pointer; }
+    .navigation li a:hover {
+      text-decoration: none; }
 
 /* ==========================================================================
    Helper classes

@@ -1,0 +1,1 @@
+"use strict";$(window).scroll(function(){console.log("jejejeje scroll")});

@@ -34,8 +34,18 @@
           -menu.each do |item|
             %li
               %a{}= item
-      .absolute.medium.green-yellow.large-padding.bottom.white-text.full-width#description
-        Contamos con las mejores marcas del Streetwear Mexicano 
+      .absolute.green-yellow.large-padding.bottom.white-text.full-width#description
+        .row.middle-xs
+          .col-xs-7.col-sm-6.white-text.medium
+            Las mejores marcas acompañan a oho
+          .col-xs
+            .box
+              %nav.text-right.navigation
+                %ul.list-inline
+                  -menu.each do |item|
+                    %li
+                      %a{}= item
+  .full-height
 
 
       

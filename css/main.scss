@@ -111,10 +111,17 @@
     }
   }
 
+.navigation {
+  li {
+    @extend .medium;
+    padding: 5px 10px;
+  }
+}
+
   /* ==========================================================================
    Helper classes
    ========================================================================== */
-   
+  
    
 .white-text {
   color: white;
@@ -126,6 +133,10 @@
 
 .title {
   font-size: 4em;
+}
+
+.medium {
+  font-size: 1.5em;
 }
 
 .fixed {

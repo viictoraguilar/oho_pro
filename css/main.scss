@@ -114,10 +114,12 @@
   /* ==========================================================================
    Helper classes
    ========================================================================== */
+   
+   
 .white-text {
-    color: white;
+  color: white;
 }
-
+    
 .dancing-script {
   font-family: 'Dancing Script', cursive
 }
@@ -126,20 +128,36 @@
   font-size: 4em;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
     position: relative;
 }
 
+.top {
+  top: 1em;
+}
+
+.right {
+  right: 5em;
+}
+
 .up {
-    z-index: 5;
+  z-index: 5;
 }
 
 .full-height {
-    height: 100%;
+  height: 100%;
 }
 
 .row {
-    margin: 0;
+  margin: 0;
+}
+
+.no-margin{
+  margin: 0px;
 }
 
 /*

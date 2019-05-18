@@ -1,1 +1,1 @@
-"use strict";$(window).scroll(function(){console.log("jejejeje scroll")});
+"use strict";console.log($(window).height()),$(window).scroll(function(){var o;console.log((o=$("#description").height(),$(window).scrollTop()>$(window).height()-1.5*o))});

@@ -26,11 +26,12 @@
           %h1.dancing-script.title.no-margin Somos Dealers de Streetwear Nacional      
           %p#is-open Abierto ahora 
       %nav.fixed.top.right.navigation.white-text#navigation
+        -menu = ["Home", "Productos", "Galería", "Contacto", "Cómo llegar"]
         %ul.list-inline
-          %li Inicio
-          %li Productos
-          %li Galería
-          %li Contacto
-          %li ¿Cómo llegar?
+          -menu.each do |item|
+            %li
+              %a{}= item
+
+
       
     

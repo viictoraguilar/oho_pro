@@ -45,7 +45,9 @@
                   -menu.each do |item|
                     %li
                       %a{}= item
-  .text-center#productos
+  .text-center.relative#productos
+    .absolute.white#menu-title
+      %h2.dancing-script.title Productos
     -productos = [{name: "Hip Hop Deporte", image: "brazer", princing: "5.00"}, {name: "Hip Hop Deporte 2", image: "elrucon", princing: "51.00"}, {name: "Hip Hop Deporte 3", image: "hiphopblue1", princing: "54.00"}, {name: "Hip Hop Deporte 4", image: "hiphopblue1", princing: "25.00"}, {name: "Hip Hop Deporte 5", image: "hiphopwhite1", princing: "15.00"}, {name: "Hip Hop Deporte 6", image: "brazer", princing: "56.00"}, {name: "Hip Hop Deporte 7", image: "brazer", princing: "7.00"}, {name: "Hip Hop Deporte 8", image: "brazer", princing: "6.00"}]
   
     .row

@@ -104,6 +104,15 @@ textarea {
     .navigation li a:hover {
       text-decoration: none; }
 
+#description ul {
+  margin: 0; }
+
+#description.absolute {
+  bottom: 0px; }
+
+#description.fixed {
+  top: 0px; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

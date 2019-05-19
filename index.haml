@@ -46,12 +46,16 @@
                     %li
                       %a{}= item
   .text-center#productos
-    -productos = [{name: "Hip Hop Deporte", image: "brazer", princing: "5.00"}, {name: "Hip Hop Deporte 2", image: "brazer", princing: "51.00"}, {name: "Hip Hop Deporte 3", image: "brazer", princing: "54.00"}, {name: "Hip Hop Deporte 4", image: "brazer", princing: "25.00"}, {name: "Hip Hop Deporte 5", image: "brazer", princing: "15.00"}, {name: "Hip Hop Deporte 6", image: "brazer", princing: "56.00"}, {name: "Hip Hop Deporte 7", image: "brazer", princing: "7.00"}, {name: "Hip Hop Deporte 8", image: "brazer", princing: "6.00"}]
+    -productos = [{name: "Hip Hop Deporte", image: "brazer", princing: "5.00"}, {name: "Hip Hop Deporte 2", image: "elrucon", princing: "51.00"}, {name: "Hip Hop Deporte 3", image: "hiphopblue1", princing: "54.00"}, {name: "Hip Hop Deporte 4", image: "hiphopblue1", princing: "25.00"}, {name: "Hip Hop Deporte 5", image: "hiphopwhite1", princing: "15.00"}, {name: "Hip Hop Deporte 6", image: "brazer", princing: "56.00"}, {name: "Hip Hop Deporte 7", image: "brazer", princing: "7.00"}, {name: "Hip Hop Deporte 8", image: "brazer", princing: "6.00"}]
   
     .row
       -productos.each do |photo|
         .col-md-4.col-lg-3.col-sm-6.col-xs-12.products{style:"background-image:url(images/products/#{photo[:image]}-thumb.jpg)"}
           .screen
+            .row.middle-xs.full-height
+              .col-xs-12.white-text
+                %h3.dancing-script.subtitle= photo[:name]
+                %p.no-margin= photo[:princing] + "MXM"
           
 
   

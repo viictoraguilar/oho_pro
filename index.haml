@@ -1,4 +1,4 @@
--gallery_images = ["brazer.jpg","elrucon.jpg","hiphopblue1.jpg","hiphopwhite1","brazer.jpg","elrucon.jpg"]
+-gallery_images = ["brazer.jpg","elrucon.jpg","hiphopblue1.jpg","hiphopwhite1.jpg","brazer.jpg","elrucon.jpg"]
 !!!5
 %html
   %head
@@ -61,8 +61,9 @@
                 %p.no-margin= photo[:princing] + "MXM"
                 
   #gallery
-    -gallery_images.each do | image |
-      .image{style:"background-image:url(images/products/#{image});height:200px;"}
+    .inner
+      -gallery_images.each do | image |
+        .image{style:"background-image:url(images/products/#{image});"}
           
 
   

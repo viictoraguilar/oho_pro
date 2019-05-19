@@ -113,6 +113,11 @@ textarea {
 #description.fixed {
   top: 0px; }
 
+.products {
+  height: 300px;
+  background-size: cover;
+  background-position: center; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

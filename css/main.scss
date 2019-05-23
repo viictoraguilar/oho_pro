@@ -159,11 +159,12 @@
     background-color: rgba(0,0,0,0.8);
     height: 100%;
     width: 100%;
+    left: 0%;
     transition: top 0.4s;
   }
 }
 
-#menu-title {
+#product-title {
   width: 300px;
   z-index: 5;
   top: 50%;
@@ -176,6 +177,9 @@
   overflow-x: hidden;
   .inner {
     white-space: nowrap;
+    position: relative;
+    left: 0%;
+    transition: left 1.5s;
   }
   .image{
     display: inline-block;

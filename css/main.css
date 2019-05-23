@@ -127,11 +127,12 @@ textarea {
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
+    left: 0%;
     -webkit-transition: top 0.4s;
     -o-transition: top 0.4s;
     transition: top 0.4s; }
 
-#menu-title {
+#product-title {
   width: 300px;
   z-index: 5;
   top: 50%;
@@ -142,7 +143,12 @@ textarea {
   width: 100%;
   overflow-x: hidden; }
   #gallery .inner {
-    white-space: nowrap; }
+    white-space: nowrap;
+    position: relative;
+    left: 0%;
+    -webkit-transition: left 1.5s;
+    -o-transition: left 1.5s;
+    transition: left 1.5s; }
   #gallery .image {
     display: inline-block;
     margin-right: -4px;

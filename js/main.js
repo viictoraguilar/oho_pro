@@ -2,9 +2,17 @@
 
 ;(function(){
    let sticky = false 
-   
+   let currentPosition = 0
+
    $("#sticky-navigation").removeClass("hidden")
    $("#sticky-navigation").slideUp(0)
+
+   setInterval(() => {
+       currentPosition++
+       $("#gallery .inner").css({
+           left: "-"+currentPosition*100+"%"
+       })
+   }, 4000)
    
    $(window).scroll(() => {
       const inBottom = isInBottom()

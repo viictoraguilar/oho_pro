@@ -4,11 +4,23 @@
    let sticky = false 
    let currentPosition = 0
 
+   const imageCounter = 5
+
    $("#sticky-navigation").removeClass("hidden")
    $("#sticky-navigation").slideUp(0)
 
    setInterval(() => {
-       currentPosition++
+
+       if(currentPosition < imageCounter){
+           currentPosition++
+       }else {
+           currentPosition = 0
+       }
+
+
+
+
+      
        $("#gallery .inner").css({
            left: "-"+currentPosition*100+"%"
        })

@@ -198,6 +198,10 @@
   }
 }
 
+#contact {
+  margin-top: -200px;
+}
+
 
 
 
@@ -207,32 +211,34 @@
 
 .card {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-  margin-bottom: 400px;
+ 
 }
 
 .green-yellow {
   background-color: rgba(224,229,0,0.8);
 }
 
+.black-text{
+  color: black;
+}
+
 .white {
   background-color: white;
 }
-   
+
 .white-text {
   color: white;
 }
 
-.black-text{
-  color: black;
+
+.slim {
+  font-weight: 200;
 }
     
 .dancing-script {
   font-family: 'Dancing Script', cursive
 }
 
-.slim {
-  font-weight: 200;
-}
 
 .title {
   font-size: 4em;

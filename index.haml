@@ -12,15 +12,16 @@
     %link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"}
     %link{rel:"stylesheet", href:"css/main.css"}
     %meta{name: "viewport", content:"width=device-width, initial-scale=1"}
+    %meta{:"data-name" => "image-counter", content:"#{gallery_images.size - 1}"}
     %script{src:"https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"}
   %body
     ="<!--[if lt IE 9]>"
     %p {class:"browserupgrade"} Actualiza tu navegador
     ="<!--[endif]-->"
     .video-container
-      %video{autoplay:true, loop:true, width:"1280", poster:"videos/images/background.jpg"}
-        %source{type:"video/mp4",src:"./videos/mp4/background.mp4"}
-        %source{type:"video/webm",src:"./videos/webm/background.webm"}
+      %video{autoplay:true, loop:true, width:"1280", poster:"videos/images/background.png"}
+        %source{type:"video/mp4",src:"./videos/mp4/background1.mp4"}
+        %source{type:"video/webm",src:"./videos/webm/background1.webm"}
     .row.full-height.middle-xs.center-xs.relative.up#home
       .col-xs-12
         .box.white-text
@@ -64,6 +65,15 @@
     .inner
       -gallery_images.each do | image |
         .image{style:"background-image:url(images/products/#{image});"}
+  .container
+    .card.white.black-text.text-center.relative
+      %h3.medium.slim
+        En
+        %strong.dancing-script.medium OHO somos los más  grandes
+        %strong.dancing-script.medium dealers de Streetwearnacional
+      %p.top-space
+        Lorem fistrum no puedor al ataquerl a peich al ataquerl por la gloria de mi madre sexuarl tiene musho peligro amatomaa diodenoo. Ese pedazo de qué dise usteer te va a hasé pupitaa ese pedazo de. Te voy a borrar el cerito tiene musho peligro pecador diodeno al ataquerl se calle ustée condemor. Mamaar sexuarl la caidita qué dise usteer ese pedazo de. A wan condemor apetecan sexuarl.
+        %strong.dancing-script.medium OHOLOVERS  
           
 
   

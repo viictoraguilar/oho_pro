@@ -4,7 +4,9 @@
    let sticky = false 
    let currentPosition = 0
 
-   const imageCounter = 5
+   const imageCounter = parseInt($("[data-name='image-counter']").attr("content"))
+
+   
 
    $("#sticky-navigation").removeClass("hidden")
    $("#sticky-navigation").slideUp(0)

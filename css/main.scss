@@ -191,6 +191,13 @@
   }
 }
 
+.container {
+  .card {
+    margin-top: -200px;
+    padding: 2em;
+  }
+}
+
 
 
 
@@ -198,6 +205,10 @@
    Helper classes
    ========================================================================== */
 
+.card {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  margin-bottom: 400px;
+}
 
 .green-yellow {
   background-color: rgba(224,229,0,0.8);
@@ -210,9 +221,17 @@
 .white-text {
   color: white;
 }
+
+.black-text{
+  color: black;
+}
     
 .dancing-script {
   font-family: 'Dancing Script', cursive
+}
+
+.slim {
+  font-weight: 200;
 }
 
 .title {
@@ -269,6 +288,10 @@
 
 .row {
   margin: 0;
+}
+
+.top-space {
+  margin-top: 2em;
 }
 
 .no-margin{

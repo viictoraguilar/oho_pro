@@ -5,7 +5,15 @@
    let currentPosition = 0
 
    const imageCounter = parseInt($("[data-name='image-counter']").attr("content"))
+   const email = "victorhugo.webdeveloper@gmail.com"
 
+   $("#cotnact-form").on("submit",function (ev) {
+       ev.preventDefault()
+
+       sendForm($(this))
+
+       return False
+   })
    
 
    $("#sticky-navigation").removeClass("hidden")
@@ -53,6 +61,19 @@
         $("#description").removeClass("fixed").addClass("absolute")
         $("#navigation").slideDown("fast")
         $("#sticky-navigation").slideUp("fast")
+   }
+
+   function sendForm($form) {
+    console.log($form.formObject())
+       $.ajax({
+           url: $form.attr("action"),
+           method: "POST",
+           data: $form.formObject(),
+           dataType: "json",
+           succes: function() {
+               alert("Todo salió bien")
+           }
+       }); 
    }
 
    function isInBottom() {

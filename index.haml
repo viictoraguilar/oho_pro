@@ -39,7 +39,7 @@
       .absolute.green-yellow.large-padding.white-text.full-width#description
         .row.middle-xs.center-xs
           .col-xs-7.col-sm-6.white-text.medium
-            Las mjores marcas acompañan a oho
+            Las mejores marcas acompañan a oho
           .col-xs.hidden#sticky-navigation
             .box
               %nav.text-right.navigation
@@ -85,9 +85,9 @@
                 .box
               .col-xs-5
                 .box
-                  %input{type:"email",name:"email",placeholder:"Coloca tu correo"}
-                  %input{type:"text",name:"name",placeholder:"Coloca tu nombre"}
-                  %textarea{name:"body",placeholder:"Dejanos tu mensaje"}
+                  %input{type:"email",name:"email",placeholder:"Coloca tu correo",class:"input"}
+                  %input{type:"text",name:"name",placeholder:"Coloca tu nombre",class:"input"}
+                  %textarea{name:"body",placeholder:"Dejanos tu mensaje",class:"input"}
                   %div
                     %button{type:"submit",class:"btn btn-success"}
                       Enviar
@@ -98,6 +98,7 @@
     window.jQuery || document.write("<script src='js/jquery.min.js'><\/script>")
   %script{src:"js/form_object.js"}
   %script{src:"js/main.js"}
+  %script{src:"dist/steps.js"}
 
 
       

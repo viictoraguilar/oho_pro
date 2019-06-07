@@ -7,12 +7,12 @@
    const imageCounter = parseInt($("[data-name='image-counter']").attr("content"))
    const email = "victorhugo.webdeveloper@gmail.com"
 
-   $("#cotnact-form").on("submit",function (ev) {
+   $("#contact-form").on("submit",function (ev) {
        ev.preventDefault()
 
        sendForm($(this))
 
-       return False
+       return false
    })
    
 
@@ -64,13 +64,13 @@
    }
 
    function sendForm($form) {
-    console.log($form.formObject())
+    // console.log($form.formObject())
        $.ajax({
            url: $form.attr("action"),
            method: "POST",
            data: $form.formObject(),
            dataType: "json",
-           succes: function() {
+           success: function() {
                alert("Todo salió bien")
            }
        }); 

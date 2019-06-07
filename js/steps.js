@@ -3,7 +3,7 @@
     const selector = "#contact-form"
 
     $(selector).find(".input").on("change",(ev)=>{
-        let $el = $(ev.target)
+        let $input = $(ev.target)
 
         let $next_input = $input.next()
 

@@ -1,1 +1,1 @@
-"use strict";$("#contact-form").find(".input").on("change",function(t){$(t.target);var n=$input.next();n.focus()});
+"use strict";$("#contact-form").find(".input").on("change",function(t){var n=$(t.target).next();n.focus()});

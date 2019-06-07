@@ -164,6 +164,15 @@ textarea {
   margin-top: -200px;
   padding: 2em; }
 
+.path-step {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: lightblue;
+  display: inline-block;
+  margin-top: 2em;
+  opacity: 0.4s; }
+
 .step-form .step {
   max-height: 0px;
   overflow: hidden;
